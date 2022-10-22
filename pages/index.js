@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
+import Carousel from "../components/carousel"
+import Contact from '../components/contact'
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       </Head>
 
       <Navbar />
+      <Carousel />
+      <Contact />
       <Footer />
     </div>
   )
