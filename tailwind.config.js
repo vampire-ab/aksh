@@ -6,13 +6,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        sitebg: "white"
+      },
       backgroundImage: {
         'walkingMan': "url('../images/walkingMan.png')",
+        'bullbear': "url('../public/BullBear1.png')",
+        'mutualFunds': "url('../public/MutualFunds.jpeg')"
       },
       keyframes: {
         walk: {
           '0%': { backgroundPosition: "0px" },
-          '50%': {backgroundPosition: "200px"},       
+          '100%': {backgroundPosition: "200px"},       
         }
       },
       animation: {

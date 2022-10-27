@@ -2,22 +2,17 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <header class="text-gray-600 body-font">
-      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
-          <span class="ml-3 text-xl">Aksh Investment</span>
-        </a>
-        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a class="mr-5 hover:text-gray-900">First Link</a>
-          <a class="mr-5 hover:text-gray-900">Second Link</a>
-          <a class="mr-5 hover:text-gray-900">Third Link</a>
-          <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-        </nav>
-      </div>
-    </header>
+    <div className="items-center justify-between flex fixed w-full flex-col md:flex-row bg-white shadow-gray-400 shadow-md h-[100px] z-10">
+      <nav className=" rounded-xl m-2 bg-white">
+        <header className="bg-clip-text text-2xl md:text-4xl text-center font-bold text-transparent bg-gradient-to-r from-blue-900 to-blue-400 md:m-3 m-2">AKSH INVESTMENT</header>
+        <h2 className='md:m-2 md:font-semibold text-right m-2'>DISCOVER THE NEW STYLE OF INVESTING</h2>
+      </nav>
+      <nav className="rounded-xl m-2 bg-white flex flex-wrap justify-center items-center">        
+        <h2 className='md:m-2 m-1 md:font-semibold text-right md:p-7 p-3 bg-blue-400 rounded-lg text-white'>HOME</h2>
+        <h2 className='md:m-2 m-1 md:font-semibold text-right md:p-7 p-3'>BLOGS</h2>
+        <h2 className='md:m-2 m-1 md:font-semibold text-right md:p-7 p-3'>CONTACT</h2>
+      </nav>
+    </div>
   )
 }
 

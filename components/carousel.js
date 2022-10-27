@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,16 +26,16 @@ export default function Carousel() {
   ];
 
   return (
-    <div className="h-[500px] flex items-center justify-center">
+    <div className="h-[500px] flex items-center justify-center bg-sitebg">
       <div className="h-full flex-col md:flex-row md:h-[350px] flex ease-out duration-1000 rounded-3xl">
 
-        <ArrowBackIosIcon className="h-full cursor-pointer z-10" onClick={() => setCurrentSlide((currentSlide + 1) % data.length)} />
+        <ArrowBackIosIcon className="h-full cursor-pointer text-black" onClick={() => setCurrentSlide((currentSlide + 1) % data.length)} />
 
         <div className="w-[85%] m-3 h-[150px] my-[15px] md:my-0 md:w-[700px] md:h-full bg-white rounded-3xl flex justify-center items-center">          
           <img className="w-full h-full rounded-3xl" src={data[currentSlide].img} alt="Project Here!" />
         </div>
 
-        <ArrowBackIosIcon className="h-full cursor-pointer z-10 rotate-180" onClick={() => setCurrentSlide((currentSlide + 1) % data.length)} />
+        <ArrowForwardIosIcon className="h-full cursor-pointer text-black ml-[5px]" onClick={() => setCurrentSlide((currentSlide + 1) % data.length)} />
       </div>
     </div>
   );

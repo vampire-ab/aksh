@@ -5,7 +5,10 @@ import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
 import Carousel from "../components/carousel"
 import Contact from '../components/contact'
-import Faq from '../components/faq'
+import WhyUs from '../components/whyUs'
+import Main from '../components/main'
+import Services from '../components/services'
+import Invest from '../components/invest'
 
 export default function Home() {
   return (
@@ -13,13 +16,17 @@ export default function Home() {
       <Head>
         <title>Aksh Investment</title>
         <meta name="Aksh Investment" content="" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon"  />
       </Head>
       <Navbar />
-      <Faq />
+      <Invest />
+      <Main />
+      <Services />
+      
+      <WhyUs />
       <Carousel />
-      <Contact />
-      <Footer />
+      {/* <Contact />
+      <Footer /> */}
     </div>
   )
 }
