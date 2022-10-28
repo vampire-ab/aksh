@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import Statistics from ".//svg/statistics-bro.svg";
 import Money from ".//svg/money.svg";
-// import BullBear from "/BullBear1.png";
+
 const Main = () => {
   return (
     <div className="relative min-h-[640px] top-[120px] justify-center flex flex-wrap gap-10 p-7">
