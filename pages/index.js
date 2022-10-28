@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Aksh Investment</title>
-        <meta name="Aksh Investment" content="" />
+        <meta name="Aksh Investment" content="Mutual Funds, Portfolio Management, Technical Analysis, Stock Market, Trading" />
         <link rel="icon"  />
       </Head>
       <Navbar />
