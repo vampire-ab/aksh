@@ -23,8 +23,8 @@ export default function Home() {
       <Main />
       <Services />
       
-      <WhyUs />
-      <Carousel />
+      {/* <WhyUs /> */}
+      {/* <Carousel /> */}
       {/* <Contact />
       <Footer /> */}
     </div>
