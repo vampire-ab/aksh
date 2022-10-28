@@ -7,8 +7,22 @@ const Main = () => {
   return (
     <div className="relative min-h-[640px] top-[120px] justify-center flex flex-wrap gap-10 p-7">
       <style jsx>{`
-        .linearGradient{
-          background: linear-gradient(-50deg, #60A5FA 30%, rgba(255, 255, 255, 100) 70%, #60AFFF 100%);
+        .linearGradient {
+          background-image: linear-gradient(
+            to left top,
+            #60afff,
+            #91bbff,
+            #b4c9ff,
+            #d0d8fe,
+            #e7e8fe,
+            #e7e8fe,
+            #e7e8fe,
+            #e7e8fe,
+            #d0d8fe,
+            #b4c9ff,
+            #91bbff,
+            #60afff
+          );
         }
       `}</style>
       <div className="h-full flex flex-col items-center justify-center">
@@ -41,6 +55,11 @@ const Main = () => {
               participants in the market accurately reflect all relevant
               information pertaining to a traded security, and therefore,
               continually assign a fair market value to the security.
+            </p>
+            <p className="text-right text-blue-50 ">
+              <p className="hover:text-blue-500 cursor-pointer">
+                Read More <span>&#62;&#62;&#62;</span>
+              </p>
             </p>
           </div>
         </div>
