@@ -6,7 +6,7 @@ const Main = () => {
     <div className="relative min-h-[640px] top-[120px] justify-center flex flex-wrap gap-10 p-7">
       <style jsx>{`
         .linearGradient {
-          background-image: linear-gradient(
+          background: linear-gradient(
             to left top,
             #60afff,
             #91bbff,
@@ -27,9 +27,8 @@ const Main = () => {
         <h2 className="bg-clip-text bg-gradient-to-r from-blue-900 to-blue-400 text-transparent font-bold text-4xl">
           THE ART
         </h2>
-        <Money
-          preserveAspectRatio="none"
-          className="text-black w-[700px] -my-16"
+        <Money          
+          className="overflow-x-hidden text-black w-[400px] md:w-[700px] md:-my-16"
         />
       </div>
       <div className="max-w-md h-full items-center justify-center">
@@ -54,11 +53,11 @@ const Main = () => {
               information pertaining to a traded security, and therefore,
               continually assign a fair market value to the security.
             </p>
-            <p className="text-right text-blue-50 ">
+            <div className="text-right text-blue-50 ">
               <p className="hover:text-blue-500 cursor-pointer">
                 Read More <span>&#62;&#62;&#62;</span>
               </p>
-            </p>
+            </div>
           </div>
         </div>
       </div>
